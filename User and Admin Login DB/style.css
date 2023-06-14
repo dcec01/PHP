@@ -1,15 +1,15 @@
 * { margin: 0px; padding: 0px; }
 body {
 	font-size: 120%;
-	background: #F8F8FF;
+	background: #ecf2f2;
 }
 .header {
 	width: 40%;
 	margin: 50px auto 0px;
-	color: white;
-	background: #5F9EA0;
+	color: rgb(21, 2, 2);
+	background: #17bd9c;
 	text-align: center;
-	border: 1px solid #B0C4DE;
+	border: 1px solid #964485;
 	border-bottom: none;
 	border-radius: 10px 10px 0px 0px;
 	padding: 20px;
@@ -18,8 +18,8 @@ form, .content {
 	width: 40%;
 	margin: 0px auto;
 	padding: 20px;
-	border: 1px solid #B0C4DE;
-	background: white;
+	border: 1px solid #17181a;
+	background: #cab8b8;
 	border-radius: 0px 0px 10px 10px;
 }
 .input-group {
@@ -51,7 +51,7 @@ form, .content {
 	padding: 10px;
 	font-size: 15px;
 	color: white;
-	background: #5F9EA0;
+	background: #1e5152;
 	border: none;
 	border-radius: 5px;
 }
