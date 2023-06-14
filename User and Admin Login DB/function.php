@@ -150,7 +150,7 @@ function login(){
 				header('location: index.php');
 			}
 		}else {
-			array_push($errors, "Wrong username/password combination");
+			array_push($errors, "Wrong Username/Password combination");
 		}
 	}
 }
