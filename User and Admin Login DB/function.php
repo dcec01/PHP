@@ -13,6 +13,14 @@ $errors   = array();
 if (isset($_POST['register_btn'])) {
 	register();
 }
+function isAdmin()
+{
+	if (isset($_SESSION['user']) && $_SESSION['user']['user_type'] == 'admin' ) {
+		return true;
+	}else{
+		return false;
+	}
+}
 
 // REGISTER USER
 function register(){
@@ -150,7 +158,7 @@ function login(){
 				header('location: index.php');
 			}
 		}else {
-			array_push($errors, "Wrong Username/Password combination");
+			array_push($errors, "Wrong username/password combination");
 		}
 	}
 }
