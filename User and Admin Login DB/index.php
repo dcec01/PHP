@@ -1,8 +1,8 @@
 <?php 
-	include('function.php');
+	include_once('function.php');
 ?>
 <?php
-include('function.php');
+include_once('function.php');
 if (!isLoggedIn()) {
 	$_SESSION['msg'] = "You must log in first";
 	header('location: login.php');
@@ -16,7 +16,11 @@ if (!isLoggedIn()) {
 </head>
 <body>
 	<div class="header">
+    
 		<h2>Home Page</h2>
+        <style> .header{
+            background: #1795bd;
+        } </style>
 	</div>
 	<div class="content">
 		<!-- notification message -->
@@ -32,7 +36,7 @@ if (!isLoggedIn()) {
 		<?php endif ?>
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="images/user_profile.png"  >
+			<img src="images/user.png"  >
 
 			<div>
 				<?php  if (isset($_SESSION['user'])) : ?>
